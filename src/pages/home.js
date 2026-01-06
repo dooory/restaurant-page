@@ -2,7 +2,7 @@ const d = document;
 
 export default function homepage(content) {
     const homepageDiv = d.createElement("div");
-    homepageDiv.classList.add("homepage");
+    homepageDiv.classList.add("home-page");
 
     content.append(homepageDiv);
 
