@@ -1,5 +1,4 @@
 import home from "./pages/home.js";
-import about from "./pages/about.js";
 import contact from "./pages/contact.js";
 import menu from "./pages/menu.js";
 
@@ -22,11 +21,6 @@ homeButton.addEventListener("click", (e) => {
 menuButton.addEventListener("click", (e) => {
     clearContent();
     menu(content);
-});
-
-aboutButton.addEventListener("click", (e) => {
-    clearContent();
-    about(content);
 });
 
 contactButton.addEventListener("click", (e) => {
