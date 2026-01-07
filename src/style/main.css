@@ -58,18 +58,23 @@ header {
 }
 
 #pageHeader {
-    display: flex;
     justify-content: center;
+    padding: 0.25rem 0;
     background-color: #011936;
 }
 
 #pageHeader > .title {
+    width: 100%;
+    text-align: center;
     color: #c2eabd;
 }
 
 #content {
-    margin: 0 1rem;
+    margin-left: auto;
+    margin-right: auto;
     padding: 1rem;
+
+    max-width: 600px;
 }
 
 #content > div > div {
