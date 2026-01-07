@@ -18,6 +18,14 @@ pageTitle.textContent = "Home";
 home(content);
 
 function clearContent() {
+    const selectedButtons = document.querySelectorAll(".selected");
+
+    for (let i = 0; i < selectedButtons.length; i++) {
+        const button = selectedButtons[i];
+
+        button.classList.remove("selected");
+    }
+
     content.replaceChildren();
 }
 
@@ -26,6 +34,7 @@ homeButton.addEventListener("click", (e) => {
 
     pageTitle.textContent = "Home";
     clearContent();
+    homeButton.classList.add("selected");
     home(content);
 });
 
@@ -34,6 +43,7 @@ menuButton.addEventListener("click", (e) => {
 
     pageTitle.textContent = "Our Menu";
     clearContent();
+    menuButton.classList.add("selected");
     menu(content);
 });
 
@@ -42,5 +52,6 @@ contactButton.addEventListener("click", (e) => {
 
     pageTitle.textContent = "Contact Us";
     clearContent();
+    contactButton.classList.add("selected");
     contact(content);
 });
