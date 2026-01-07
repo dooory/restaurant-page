@@ -24,6 +24,14 @@ body {
     margin: 0;
 }
 
+li {
+    list-style: none;
+}
+
+ul {
+    padding: 0;
+}
+
 header {
     margin: 1rem 0;
 }
@@ -57,4 +65,35 @@ header {
 
 #pageHeader > .title {
     color: #c2eabd;
+}
+
+#content {
+    margin: 0 1rem;
+    padding: 1rem;
+}
+
+#content > div > div {
+    background-color: rgb(1, 25, 54);
+    border-radius: 1rem;
+    padding: 0.5rem 1rem;
+}
+
+#content > div > div {
+    margin: 3rem 0;
+}
+
+#content > div > div:only-child {
+    margin: 0;
+}
+
+#content > div > div:first-child {
+    margin-top: 0;
+}
+
+#content > div > div:last-child {
+    margin-bottom: 0;
+}
+
+#content h2 {
+    color: rgb(249 220 92);
 }
