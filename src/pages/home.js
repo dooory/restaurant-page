@@ -6,7 +6,6 @@ export default function homepage(content) {
 
     content.append(homepageDiv);
 
-    const [taglineDiv, taglineText] = tagline(homepageDiv);
     const [descriptionDiv, descriptionHeader, descriptionText] =
         description(homepageDiv);
 }
@@ -16,11 +15,7 @@ function tagline(parentDiv) {
     taglineDiv.classList.add("tagline");
     parentDiv.append(taglineDiv);
 
-    const taglineText = d.createElement("h3");
-    taglineText.textContent = "This is our motto!";
-    taglineDiv.append(taglineText);
-
-    return [taglineDiv, taglineText];
+    return homepageDiv;
 }
 
 function description(parentDiv) {
@@ -29,7 +24,7 @@ function description(parentDiv) {
     parentDiv.append(descriptionDiv);
 
     const descriptionHeader = d.createElement("h2");
-    descriptionHeader.textContent = "What our restaurant is about!";
+    descriptionHeader.textContent = "A break away from reality";
     descriptionDiv.append(descriptionHeader);
 
     const descriptionText = d.createElement("p");
