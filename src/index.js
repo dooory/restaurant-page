@@ -14,7 +14,7 @@ const contactButton = d.querySelector(".contact-button");
 
 let currentPage = "home";
 
-pageTitle.textContent = "Home";
+pageTitle.textContent = "Porker Restaurant";
 home(content);
 
 function clearContent() {
@@ -32,7 +32,7 @@ function clearContent() {
 homeButton.addEventListener("click", (e) => {
     currentPage = "home";
 
-    pageTitle.textContent = "Home";
+    pageTitle.textContent = "Porker Restaurant";
     clearContent();
     homeButton.classList.add("selected");
     home(content);
