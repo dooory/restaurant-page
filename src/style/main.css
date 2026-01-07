@@ -1,0 +1,55 @@
+html {
+    font-family:
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Oxygen,
+        Ubuntu,
+        Cantarell,
+        "Open Sans",
+        "Helvetica Neue",
+        sans-serif;
+}
+
+body {
+    background-color: rgb(70 83 98);
+    color: #c2eabd;
+    margin: 0;
+}
+
+header {
+    margin: 1rem 0;
+}
+
+.nav-bar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.nav-bar > button {
+    font-size: 1.5rem;
+    width: 15ch;
+    background-color: #011936;
+    border-radius: 0.5rem;
+    color: #c2eabd;
+    padding: 0.5rem;
+    border: none;
+}
+
+.nav-bar > button.selected {
+    border: 2px solid white;
+}
+
+#pageHeader {
+    display: flex;
+    justify-content: center;
+    background-color: #011936;
+}
+
+#pageHeader > .title {
+    color: #c2eabd;
+}

@@ -1,6 +1,7 @@
 import home from "./pages/home.js";
 import contact from "./pages/contact.js";
 import menu from "./pages/menu.js";
+import "./style/main.css";
 
 const d = document;
 
