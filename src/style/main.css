@@ -61,6 +61,7 @@ header {
     justify-content: center;
     padding: 0.25rem 0;
     background-color: #011936;
+    margin: 3rem 0 2rem;
 }
 
 #pageHeader > .title {
@@ -80,25 +81,58 @@ header {
 #content > div > div {
     background-color: rgb(1, 25, 54);
     border-radius: 1rem;
+}
+
+.home-page > div {
     padding: 0.5rem 1rem;
 }
 
-#content > div > div {
+.home-page > div {
     margin: 3rem 0;
-}
-
-#content > div > div:only-child {
-    margin: 0;
-}
-
-#content > div > div:first-child {
-    margin-top: 0;
-}
-
-#content > div > div:last-child {
-    margin-bottom: 0;
 }
 
 #content h2 {
     color: rgb(249 220 92);
+}
+
+/* Home Page */
+
+.home-page > div:only-child {
+    margin: 0;
+}
+
+.home-page > div:first-child {
+    margin-top: 0;
+}
+
+.home-page > div:last-child {
+    margin-bottom: 0;
+}
+
+/* Menu Page */
+.menu-container {
+    display: grid;
+    padding: 1rem;
+    grid-template-columns: 1fr 1fr;
+}
+
+.item-entry {
+    padding: 1rem;
+}
+
+.item-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.item-div > * {
+    margin: 0;
+}
+
+/* Contact Us */
+
+.contact-container {
+    padding: 1rem;
 }
